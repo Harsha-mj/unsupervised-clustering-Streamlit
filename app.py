@@ -29,7 +29,7 @@ if uploaded_file:
         st.subheader("🔍 Elbow Method for Optimal k")
         max_k = st.slider("Select max value for k", min_value=5, max_value=15, value=10)
         sse = find_optimal_k(reduced_features, max_k)
-        plot_elbow(sse, max_k,, figsize=(8, 6))
+        plot_elbow(sse, max_k,figsize=(8, 6))
 
         # Silhouette method
         st.subheader("📏 Silhouette Score Method for Optimal k")
