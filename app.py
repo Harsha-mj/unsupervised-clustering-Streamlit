@@ -19,7 +19,8 @@ if uploaded_file:
 
         # Show correlation heatmap
         st.subheader("Correlation Heatmap")
-        show_correlation_heatmap(df)
+        feature = df.select_dtypes(include=['int64', 'float64']).copy()
+        show_correlation_heatmap(feature)
 
         # Preprocess and apply PCA
         reduced_features, numerical_df = preprocess_data(df)
