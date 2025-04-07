@@ -46,7 +46,7 @@ if uploaded_file:
         st.write(df[['Cluster']].value_counts())
 
         st.subheader("Clustered Data Preview")
-        st.dataframe(df.head())
+        st.dataframe(df.head(10))
 
     except Exception as e:
         st.error(f"An error occurred: {e}")
