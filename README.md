@@ -19,4 +19,4 @@ streamlit run app.py
 - Cluster visualization (optional)
 
 ## 📦 Deployment
-Ready to deploy on [Streamlit]([https://streamlit.io/cloud](https://unsupervised-clustering-app-9lgzkmmm6sxs9yrny8ivfs.streamlit.app/)).
+Ready to deploy on [Streamlit](https://unsupervised-clustering-app-9lgzkmmm6sxs9yrny8ivfs.streamlit.app/).
