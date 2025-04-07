@@ -34,7 +34,7 @@ if uploaded_file:
         # Silhouette method
         st.subheader("📏 Silhouette Score Method for Optimal k")
         silhouette_scores_list = silhouette_scores(reduced_features, max_k)
-        plot_silhouette_scores(silhouette_scores_list, max_k,, figsize=(8, 6))
+        plot_silhouette_scores(silhouette_scores_list, max_k, figsize=(8, 6))
 
         # User-selected k
         st.subheader("🎯 Select Number of Clusters for Final Model")
