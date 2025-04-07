@@ -2,7 +2,7 @@
 
 # KMeans Clustering - Streamlit App
 
-This project performs unsupervised clustering on customer data using the Elbow Method and KMeans with PCA dimensionality reduction. Built with Streamlit and modularized in Python.
+This project performs unsupervised clustering on users data using the Elbow Method and KMeans with PCA dimensionality reduction. Built with Streamlit and modularized in Python.
 
 ## 📁 How to Run
 
