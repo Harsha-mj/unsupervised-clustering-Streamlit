@@ -20,7 +20,7 @@ if uploaded_file:
         # Show correlation heatmap
         st.subheader("Correlation Heatmap")
         feature = df.select_dtypes(include=['int64', 'float64']).copy()
-        show_correlation_heatmap(feature, figsize=(8, 6))
+        show_correlation_heatmap(feature)
 
         # Preprocess and apply PCA
         reduced_features, numerical_df = preprocess_data(df)
@@ -29,12 +29,12 @@ if uploaded_file:
         st.subheader("🔍 Elbow Method for Optimal k")
         max_k = st.slider("Select max value for k", min_value=5, max_value=15, value=10)
         sse = find_optimal_k(reduced_features, max_k)
-        plot_elbow(sse, max_k,figsize=(8, 6))
+        plot_elbow(sse, max_k)
 
         # Silhouette method
         st.subheader("📏 Silhouette Score Method for Optimal k")
         silhouette_scores_list = silhouette_scores(reduced_features, max_k)
-        plot_silhouette_scores(silhouette_scores_list, max_k, figsize=(8, 6))
+        plot_silhouette_scores(silhouette_scores_list)
 
         # User-selected k
         st.subheader("🎯 Select Number of Clusters for Final Model")
